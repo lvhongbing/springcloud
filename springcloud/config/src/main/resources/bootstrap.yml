@@ -3,10 +3,11 @@ spring:
     config: 
       name: test
       label: master
-      discover: 
-        enable: true
+      discovery:
+        enabled: true
         #配置中心spring.application.name指定的名字
-        serviceId: config
+        service-id: config
+        
 eureka: 
   client: 
     service-url: 
