@@ -9,7 +9,7 @@ spring:
         git:
           uri: https://github.com/lvhongbing/springcloud.git
           #配置存放到这个目录下
-          search-paths: config
+          search-paths: springcloud
           username: 781072481@qq.com
           password: lhb361456123
       #使用master分支的配置 

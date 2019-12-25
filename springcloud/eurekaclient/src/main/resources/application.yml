@@ -5,7 +5,9 @@ spring:
     name: eurekaclient
   datasource: 
     druid:
-      url: jdbc:oracle:thin:@192.168.56.131:1521/ora11g?useUnicode=true&characterEncoding=UTF-8&useSSL=false
+      url: jdbc:oracle:thin:@192.168.56.131:1521/ora11g
+      #?useUnicode=true&characterEncoding=UTF-8&useSSL=false
+      driver-class-name: oracle.jdbc.OracleDriver
       username: lhb
       password: 123
       stat-view-servlet: 

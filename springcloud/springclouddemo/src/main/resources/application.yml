@@ -14,7 +14,7 @@ third:
   appSecret: 1
   
 management: 
-  endpoints:
+  endpoints: 
     web:
       exposure:
         include: '*'

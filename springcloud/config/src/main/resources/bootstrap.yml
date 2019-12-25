@@ -7,8 +7,10 @@ spring:
         enabled: true
         #配置中心spring.application.name指定的名字
         service-id: config
-        
 eureka: 
   client: 
     service-url: 
       defaultZone: http://admin:admin123@localhost:8101/eureka/
+
+encrypt: 
+  key: springcloud

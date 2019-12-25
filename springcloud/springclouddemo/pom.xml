@@ -44,5 +44,6 @@
 		<module>config</module>
 		<module>common</module>
 		<module>test</module>
+		<module>public</module>
 	</modules>
 </project>
