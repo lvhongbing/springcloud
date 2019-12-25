@@ -1,2 +1,13 @@
-encrypt:
-  key: springcloud
+spring: 
+  cloud: 
+    config: 
+      name: test
+      label: master
+      discover: 
+        enable: true
+        #配置中心spring.application.name指定的名字
+        serviceId: config
+eureka: 
+  client: 
+    service-url: 
+      defaultZone: http://admin:admin123@localhost:8101/eureka
