@@ -1,0 +1,20 @@
+spring: 
+  application:
+    name: eurekaserver
+  profiles:
+    active: node2
+  security:
+    user:
+      name: admin
+      password: admin123
+    
+eureka:
+  server:
+    enable-self-preservation: false
+    eviction-interval-timer-in-ms: 60000
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    healthcheck: true
+    #service-url:
+      #defaultZone: http://localhost:8101/eureka/

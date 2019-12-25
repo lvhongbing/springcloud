@@ -1,0 +1,22 @@
+server: 
+  port: 9999
+spring: 
+  application:
+    name: test
+    
+eureka: 
+  client: 
+    register-with-eureka: true
+    fetch-registry: true
+    service-url: 
+      defaultZone: http://admin:admin123@node1:8100/eureka/
+  instance:
+    lease-renewal-interval-in-seconds: 30
+    
+management:
+  endpoints:
+    web:
+      exposure:
+        include: refresh,health,info
+          
+      

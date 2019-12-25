@@ -1,15 +1,13 @@
-package com.lynn.blog.eurekaserver;
+package com.lynn.blog.test;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.cloud.client.SpringCloudApplication;
-import org.springframework.cloud.netflix.eureka.server.EnableEurekaServer;
 
 /**
  * 
  * @author Administrator
  *
  */
-@EnableEurekaServer
 @SpringCloudApplication
 public class Application{
 

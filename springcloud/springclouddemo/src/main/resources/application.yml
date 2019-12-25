@@ -1,0 +1,21 @@
+server:
+  servlet:
+    #定义上下文 路径
+    context-path: /demo
+   #定义 工程启动的端口
+  port: 8081
+ 
+spring:
+  profiles:
+    active: dev
+    
+third: 
+  appKey: 1
+  appSecret: 1
+  
+management: 
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+          

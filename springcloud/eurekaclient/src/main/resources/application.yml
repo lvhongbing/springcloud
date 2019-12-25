@@ -1,0 +1,27 @@
+server: 
+  port: 8762
+spring: 
+  application:
+    name: eurekaclient
+  datasource: 
+    druid:
+      url: jdbc:oracle:thin:@192.168.56.131:1521/ora11g?useUnicode=true&characterEncoding=UTF-8&useSSL=false
+      username: lhb
+      password: 123
+      stat-view-servlet: 
+        login-username: admin
+        login-password: admin
+    
+eureka:
+  client:
+    register-with-eureka: true
+    fetch-registry: false
+    service-url:
+      defaultZone: http://localhost:8761/eureka/ 
+
+mybatis: 
+  #配置mapper.xml的class path路径
+  mapper-locations: classpath:/mapper/*Mapper.xml
+  configuration:
+    #配置项：开启下划线到驼峰的自动转换。作用：将数据库字段根据驼峰规则自动注入到对象属性
+    map-underscore-to-camel-case: true      

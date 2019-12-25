@@ -1,0 +1,7 @@
+server:
+  port: 8080
+  
+self: 
+  message: 
+     data: 这是我自定义的属性
+     
